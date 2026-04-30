@@ -8,6 +8,7 @@ sqlalchemy
 psycopg2-binary
 python-dotenv
 pydantic
+pyarrow
 openai
 streamlit
 plotly
@@ -15,3 +16,5 @@ matplotlib
 jupyter
 pytest
 tqdm
+google-api-python-client
+

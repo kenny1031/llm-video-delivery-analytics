@@ -1,15 +1,15 @@
 services:
   postgres:
     image: postgres:16
-    container_name: creator-analytics-postgres
+    container_name: video-delivery-postgres
     environment:
-      POSTGRES_USER: creator
-      POSTGRES_PASSWORD: creator
-      POSTGRES_DB: creator_analytics
+      POSTGRES_USER: delivery
+      POSTGRES_PASSWORD: delivery
+      POSTGRES_DB: video_delivery_analytics
     ports:
       - "55434:5432"
     volumes:
-      - creator_analytics_pgdata:/var/lib/postgresql/data
+      - video_delivery_pgdata:/var/lib/postgresql/data
 
 volumes:
-  creator_analytics_pgdata:
+  video_delivery_pgdata:

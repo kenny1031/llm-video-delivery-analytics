@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/raw/*
+data/processed/*
+data/synthetic/*
+data/llm_enriched/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/synthetic/.gitkeep
+!data/llm_enriched/.gitkeep
+
+# Artifacts
+artifacts/
+models/
+*.pkl
+*.joblib
+
+# OS
+.DS_Store
+
+# Logs
+*.log

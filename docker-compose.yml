@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: creator-analytics-postgres
+    environment:
+      POSTGRES_USER: creator
+      POSTGRES_PASSWORD: creator
+      POSTGRES_DB: creator_analytics
+    ports:
+      - "55434:5432"
+    volumes:
+      - creator_analytics_pgdata:/var/lib/postgresql/data
+
+volumes:
+  creator_analytics_pgdata:

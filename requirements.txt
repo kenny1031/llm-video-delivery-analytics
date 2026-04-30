@@ -1,0 +1,17 @@
+pandas
+numpy
+scipy
+statsmodels
+scikit-learn
+xgboost
+sqlalchemy
+psycopg2-binary
+python-dotenv
+pydantic
+openai
+streamlit
+plotly
+matplotlib
+jupyter
+pytest
+tqdm

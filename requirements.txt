@@ -18,3 +18,5 @@ pytest
 tqdm
 google-api-python-client
 
+streamlit
+plotly

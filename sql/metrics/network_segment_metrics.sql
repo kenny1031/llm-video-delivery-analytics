@@ -14,7 +14,6 @@ FROM delivery_events
 GROUP BY region_code, variant
 ORDER BY avg_latency_ms DESC;
 
-
 -- 2. Edge PoP-level quality
 SELECT
     edge_pop,
@@ -29,7 +28,6 @@ FROM delivery_events
 GROUP BY edge_pop, variant
 ORDER BY avg_latency_ms DESC;
 
-
 -- 3. Protocol-level quality
 SELECT
     protocol,
@@ -43,7 +41,6 @@ SELECT
 FROM delivery_events
 GROUP BY protocol, variant
 ORDER BY avg_latency_ms DESC;
-
 
 -- 4. IP version-level quality
 SELECT

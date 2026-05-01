@@ -30,3 +30,5 @@ models/
 # Logs
 *.log
 data/synthetic_delivery/*.parquet
+
+reports/diagnostics/*_diagnostics.csv

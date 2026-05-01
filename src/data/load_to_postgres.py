@@ -12,6 +12,7 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 
 VIDEOS_PATH = "data/processed/youtube_videos.parquet"
 DELIVERY_PATH = "data/synthetic_delivery/delivery_events.parquet"
+CAPACITY_PATH = "data/synthetic_delivery/edge_capacity_snapshots.parquet"
 
 
 def main():
@@ -24,6 +25,10 @@ def main():
     print("Loading delivery events...")
     events = pd.read_parquet(DELIVERY_PATH)
     events.to_sql("delivery_events", engine, if_exists="append", index=False)
+
+    print("Loading edge capacity snapshots...")
+    capacity = pd.read_parquet(CAPACITY_PATH)
+    capacity.to_sql("edge_capacity_snapshots", engine, if_exists="append", index=False)
 
     print("Done.")
 

@@ -1,11 +1,4 @@
 # LLM-assisted Video Delivery Quality & Cost Analytics Platform
-
-A local data analytics project for video delivery quality, CDN cost governance, and edge resource capacity monitoring.
-
-The project combines API-based video metadata ingestion, synthetic CDN delivery logs, PostgreSQL metrics, A/B testing, cost and capacity reports, and local LLM-assisted readouts. The LLM is used only to rewrite structured analysis into business-facing summaries; SQL metrics, statistical tests, and deterministic diagnostics remain the source of truth.
-
----
-
 ## Project Overview
 
 Modern video platforms need to balance delivery quality, infrastructure cost, and edge capacity. This project simulates that workflow with a small but end-to-end analytics system.
